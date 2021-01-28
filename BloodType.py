@@ -2,8 +2,11 @@ def interface():
     print("Blood Test Analysis:")
     while 1:
         print("\nOptions")
+        print("1 - HDL")
         print("9 - quit")
         choice = input("Enter an option: ")
+        if choice == "1":
+            hdl_driver();
         if choice == "9":
             return
 def hdl_driver():
@@ -30,3 +33,4 @@ def output_hdl(value):
     return
 
 interface()
+# hdl_driver()
