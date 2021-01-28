@@ -44,12 +44,14 @@ def input_ldl():
 
 def analyze_ldl(data):
     data = int(data)
-    if data>=60:
+    if data<130:
         return "Normal"
-    elif data>=40:
-        return "Borderline Low"
+    elif data<160:
+        return "Borderline High"
+    elif data<190:
+        return "High"
     else:
-        return "Low"
+        return "Very High"
 
 def output_ldl(value):
     print("LDL is {}".format(value))
