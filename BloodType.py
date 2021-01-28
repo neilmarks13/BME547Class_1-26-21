@@ -6,5 +6,12 @@ def interface():
         choice = input("Enter an option: ")
         if choice == "9":
             return
+def hdl_driver():
+    
+
+def input_hdl():
+    data_in = input("Enter HDL data: ")
+    return data_in
+
 
 interface()
