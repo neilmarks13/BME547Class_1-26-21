@@ -1,3 +1,7 @@
-def test_analyze_hdl():
+import pytest
+
+@pytest.mark.parametrize("number, level", [(65,"Normal"),(45,"Borderline Low"),(25,"Low")])
+def test_analyze_hdl(number,level):
     from BloodType import analyze_hdl
-    assert "Normal" == analyze_hdl(65)
+    assert level == analyze_hdl(number)
+    
