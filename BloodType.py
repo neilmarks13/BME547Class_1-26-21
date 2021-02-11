@@ -59,6 +59,6 @@ def analyze_ldl(data):
 def output_ldl(value):
     print("LDL is {}".format(value))
     return
-
-interface()
+if __name__ == "main":
+    interface()
 # hdl_driver()
